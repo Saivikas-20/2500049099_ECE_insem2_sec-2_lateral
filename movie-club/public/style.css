@@ -1,0 +1,74 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, Arial, sans-serif;
+  background: #f3f4f8;
+  color: #1f2433;
+}
+
+header {
+  background: #23284a;
+  color: #fff;
+  padding: 24px 16px;
+  text-align: center;
+}
+header h1 { margin: 0 0 4px; font-size: 1.8rem; }
+header p { margin: 0; opacity: 0.8; }
+
+main { max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.card h2 { margin-top: 0; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+label { display: flex; flex-direction: column; font-size: 0.9rem; font-weight: 600; gap: 6px; }
+input {
+  padding: 9px 10px;
+  border: 1px solid #c7cbd8;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+input:focus { outline: 2px solid #5b6bd6; border-color: transparent; }
+
+.actions { margin-top: 16px; display: flex; gap: 10px; }
+button {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #4a5bd4;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+button:hover { background: #3949b8; }
+button.secondary { background: #8a90a8; }
+button.danger { background: #d64545; }
+button.danger:hover { background: #b83030; }
+button.small { padding: 5px 10px; font-size: 0.8rem; }
+
+#message { min-height: 1.2em; margin: 10px 0 0; font-size: 0.9rem; }
+#message.ok { color: #1f8a4c; }
+#message.err { color: #c0392b; }
+
+.toolbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.toolbar h2 { margin: 0; }
+.toolbar input { min-width: 260px; }
+#count { font-weight: 400; color: #6b7086; font-size: 0.9rem; }
+
+.table-wrap { overflow-x: auto; margin-top: 14px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #e4e6ee; }
+th { background: #f0f1f7; font-size: 0.85rem; }
+td.actions-cell { white-space: nowrap; display: flex; gap: 6px; }
+#empty { text-align: center; color: #6b7086; }
